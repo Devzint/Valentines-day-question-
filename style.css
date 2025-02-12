@@ -16,8 +16,19 @@ body {
 }
 
 #image-container {
-    /* This container will hold the images */
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow images to wrap */
+    justify-content: center; /* Center images horizontally */
+    margin-bottom: 20px; /* Add space below */
 }
+
+#image-container img {
+    width: 150px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add spacing */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
 
 #question {
     font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
